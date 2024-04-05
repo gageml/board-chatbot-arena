@@ -1,0 +1,67 @@
+{
+  "id": "17c6678a-93f1-4563-bca1-c367563e341a",
+  "title": "Chatbot Arena Leaderboard",
+  "description": "Imported results from [Chatbot Arena Leaderboard](https://chat.lmsys.org/).",
+  "run-select": {
+    "operation": "import",
+    "status": "completed"
+  },
+  "group-select": {
+    "group-by": {
+      "attribute": "model"
+    },
+    "max": {
+      "run-attr": "started"
+    }
+  },
+  "columns": [
+    {
+      "run-attr": "id",
+      "label": "Run ID",
+      "hide": true
+    },
+    {
+      "run-attr": "status",
+      "label": "Run Status",
+      "hide": true
+    },
+    {
+      "run-attr": "operation",
+      "label": "Operation",
+      "hide": true
+    },
+    {
+      "run-attr": "started",
+      "label": "Run Date",
+      "hide": true
+    },
+    {
+      "attribute": "model",
+      "label": "Model"
+    },
+    {
+      "attribute": "votes",
+      "label": "Votes"
+    },
+    {
+      "attribute": "organization",
+      "label": "Organization"
+    },
+    {
+      "attribute": "license",
+      "label": "License"
+    },
+    {
+      "attribute": "cutoff_date",
+      "label": "Cutoff Date"
+    },
+    {
+      "metric": "elo",
+      "label": "ELO"
+    },
+    {
+      "metric": "ci",
+      "label": "95% CI"
+    }
+  ]
+}

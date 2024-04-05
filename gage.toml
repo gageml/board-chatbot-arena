@@ -1,0 +1,25 @@
+[import]
+
+exec = "python results.py"
+description = "Import model results from the Chatbot Arena Leaderboard"
+sourcecode = ["results.py"]
+config = "results.py#model"
+
+[batch]
+
+exec = "python batch.py"
+description = "Import Chatbot Arena model results as a batch"
+sourcecode = ["results.py", "batch.py"]
+config = "batch.py#preview"
+
+[publish]
+
+exec = "python publish.py"
+description = "Publish board to Gage Live"
+sourcecode = ["publish.py", "board.json"]
+config = [
+    "publish.py#remote",
+    "#bucket",
+    "#board_key",
+    "#test_credentials",
+]
